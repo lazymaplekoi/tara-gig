@@ -1,0 +1,39 @@
+# Django
+*.log
+db.sqlite3
+db.sqlite3-journal
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# IDE
+.idea/
+.vscode/
+
+# Environment
+.env
+.venv/
+venv/
+ENV/
+*env/
+
+# Node.js
+node_modules/
+
+# Compiled files
+*.pyc
+*.class
+*.o
+*.obj
+
+# Backup files
+*~
+*.bak
+*.swp
+*.tmp
+*.log
+
+# Dependency directories
+pip-wheel-metadata/
