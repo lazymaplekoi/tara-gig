@@ -1,11 +1,28 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
-
 <head>
+    <!-- meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="PH's gig directory">
+    <meta name="keywords" content="gigs ph, gigs">
+    <meta name="author" content="Mikayla Lopez">
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+
     <title>{% block title %} {% endblock %}</title>
 </head>
 
 <body>
+    {% include 'layouts/header.html' %}
+    
     {% block content %} {% endblock %}
 </body>
 
