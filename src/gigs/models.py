@@ -1,9 +1,11 @@
 from django.db import models
+from django.contrib.postgres.fields import ArrayField
 
 class Artist(models.Model):
     name = models.CharField(max_length=255)
     bio = models.TextField(null=True, blank=True)
     image = models.ImageField(upload_to='artists/', null=True, blank=True)
+    contact_number = ArrayField(models.CharField(max_length=20), blank=True, null=True)
 
     def __str__(self):
         return self.name
@@ -21,7 +23,7 @@ class City(models.Model):
     def __str__(self):
         return self.name
 
-class Location(models.Model):
+class Venue(models.Model):
     name = models.CharField(max_length=50)
     city = models.ForeignKey(City, on_delete=models.CASCADE)
     address = models.CharField(max_length=200)
@@ -32,21 +34,17 @@ class Location(models.Model):
 class Production(models.Model):
     name = models.CharField(max_length=255)
     description = models.TextField()
-    start_date = models.DateField()
-    end_date = models.DateField()
-    artists = models.ManyToManyField(Artist)
 
     def __str__(self):
         return self.name
 
-
 class Event(models.Model):
     name = models.CharField(max_length=255)
     description = models.TextField()
-    start_time = models.DateTimeField()
-    end_time = models.DateTimeField()
-    location = models.ForeignKey(Location, on_delete=models.CASCADE)
+    date = models.DateTimeField()
+    venue = models.ForeignKey(Venue, on_delete=models.CASCADE)
     production = models.ForeignKey(Production, on_delete=models.CASCADE)
+    lineup = models.ManyToManyField(Artist)
 
     def __str__(self):
         return self.name
