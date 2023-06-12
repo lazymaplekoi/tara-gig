@@ -62,7 +62,7 @@ npm start
 To run the Tailwind compiler:
 
 ```shell
-npm watch:css
+npm run watch:css
 ```
 
 ### Development

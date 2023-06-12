@@ -8,8 +8,8 @@
     "tailwindcss": "^3.3.2"
   },
   "scripts": {
-    "start": "concurrently \"python manage.py runserver\" \"npm run watch:css\"",
-    "watch:css": "npx tailwindcss-cli@latest build -o static/css/styles.css --watch"
+    "start": "django runserver",
+    "watch:css": "npx tailwindcss -i static/css/tailwind.css -o static/css/styles.css --watch"
   },
   "dependencies": {
     "concurrently": "^8.2.0"

@@ -2,10 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
 
-@layer utilities {
+    html, body {
+        @apply font-sans;
+    }
+
+    body {
+        /* @apply bg-gradient-to-br from-white from-10% via-[#56A3A6] via-40% to-[#FFBC42] to-90% min-h-screen; */
+        @apply bg-black;
+    }
     
-    h1, h2 {
-        font-family: 'Staatliches', cursive;
+    h1, h2, h3, h4, h5, h6 {
+        @apply font-heading uppercase;
     }
 }
