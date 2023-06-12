@@ -53,10 +53,16 @@ A gig directory app project
 
 ### Usage
 
-To start the development server (including the CSS compiler), run the following command:
+To start the development server:
 
 ```shell
 npm start
+```
+
+To run the Tailwind compiler:
+
+```shell
+npm watch:css
 ```
 
 ### Development

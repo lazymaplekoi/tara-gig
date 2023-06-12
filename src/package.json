@@ -8,9 +8,10 @@
     "tailwindcss": "^3.3.2"
   },
   "scripts": {
-    "start": "foreman start -f Procfile.dev"
+    "start": "concurrently \"python manage.py runserver\" \"npm run watch:css\"",
+    "watch:css": "npx tailwindcss-cli@latest build -o static/css/styles.css --watch"
   },
   "dependencies": {
-    "foreman": "^3.0.1"
+    "concurrently": "^8.2.0"
   }
 }
