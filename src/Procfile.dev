@@ -1,0 +1,2 @@
+web: django runserver
+tailwind: npx tailwindcss-cli@latest build -o static/css/styles.css --watch

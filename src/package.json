@@ -1,0 +1,16 @@
+{
+  "name": "tara-gig",
+  "version": "1.0.0",
+  "description": "A gig directory app",
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.23",
+    "tailwindcss": "^3.3.2"
+  },
+  "scripts": {
+    "start": "foreman start -f Procfile.dev"
+  },
+  "dependencies": {
+    "foreman": "^3.0.1"
+  }
+}
