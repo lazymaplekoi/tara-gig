@@ -40,3 +40,6 @@ pip-wheel-metadata/
 
 # Settings
 src/tara_gig/settings.py
+
+# Other files
+eg/
