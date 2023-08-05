@@ -69,6 +69,12 @@ npm run watch:css
 
 During development, use the following commands:
 
+- To activate the virtual environment:
+
+    ```shell
+    tgenv/Scripts/activate
+    ```
+
 - To compile TailwindCSS styles:
 
     ```shell
@@ -79,10 +85,4 @@ During development, use the following commands:
 
     ```shell
     django runserver
-    ```
-
-- To run tests:
-
-    ```shell
-    django test
     ```
