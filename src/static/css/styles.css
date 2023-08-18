@@ -44,7 +44,7 @@ html {
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-  font-family: Poppins, Inter, sans-serif;
+  font-family: DM Sans, Inter, sans-serif;
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
@@ -423,7 +423,7 @@ video {
 }
 
 html, body {
-  font-family: Poppins, Inter, sans-serif;
+  font-family: DM Sans, Inter, sans-serif;
 }
 
 body {
@@ -433,7 +433,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: Barlow Condensed, Inter, sans-serif;
+  font-family: DM Sans, Inter, sans-serif;
   text-transform: uppercase;
 }
 
@@ -545,34 +545,6 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
 }
 
-.ml-5 {
-  margin-left: 1.25rem;
-}
-
-.ml-10 {
-  margin-left: 2.5rem;
-}
-
-.ml-\[50px\] {
-  margin-left: 50px;
-}
-
-.ml-\[80\] {
-  margin-left: 80;
-}
-
-.ml-\[80px\] {
-  margin-left: 80px;
-}
-
-.ml-\[70px\] {
-  margin-left: 70px;
-}
-
-.ml-\[60px\] {
-  margin-left: 60px;
-}
-
 .ml-\[65px\] {
   margin-left: 65px;
 }
@@ -629,11 +601,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .font-heading {
-  font-family: Barlow Condensed, Inter, sans-serif;
-}
-
-.font-sans {
-  font-family: Poppins, Inter, sans-serif;
+  font-family: DM Sans, Inter, sans-serif;
 }
 
 .text-6xl {
@@ -654,10 +622,6 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
-.lowercase {
-  text-transform: lowercase;
-}
-
 .normal-case {
   text-transform: none;
 }
@@ -666,19 +630,14 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.25;
 }
 
-.text-\[\#BB1933\] {
+.text-\[\#FFBC42\] {
   --tw-text-opacity: 1;
-  color: rgb(187 25 51 / var(--tw-text-opacity));
+  color: rgb(255 188 66 / var(--tw-text-opacity));
 }
 
 .text-black {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
-}
-
-.text-\[\#FFBC42\] {
-  --tw-text-opacity: 1;
-  color: rgb(255 188 66 / var(--tw-text-opacity));
 }
 
 .text-white {
