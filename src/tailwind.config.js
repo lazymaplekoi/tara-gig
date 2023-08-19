@@ -3,10 +3,13 @@ module.exports = {
         relative: true,
         files: [
             './**/templates/*.html',
-            './**/templates/**/*.html',
+            './**/templates/**/*.html'
         ]
     },
     theme: {
+        fontWeight: {
+            1000: '1000'
+        },
         extend: {
             colors: {
                 jet: '#2A2B2E',
@@ -83,7 +86,7 @@ module.exports = {
                 }
             },
             fontFamily: {
-                sans: ['DM Sans', 'Inter', 'sans-serif'],
+                sans: ['Inter', 'sans-serif'],
                 heading: ['DM Sans', 'Inter', 'sans-serif']
             }
         },

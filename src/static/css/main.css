@@ -1,7 +1,25 @@
-html, body {;
-    font-family: 'Inter', sans-serif;
+html, body {
+    font-family: 'DM Sans', sans-serif;
+    color: white;
 }
 
-h1, h2 {
-    font-family: 'Staatliches', cursive;
+h1.logo {
+    font-weight: 1000;
+    letter-spacing: -0.05em;
+}
+
+@keyframes colorChange {
+    0% { color: #FFFFFF; }
+    20% { color: #BB3626; }
+    40% { color: #D59827; }
+    60% { color: #32A658; }
+    80% { color: #782A7E; }
+    100% { color: #2A4E8C; }
+  }
+
+.rainbow-point {
+    /* font-family: 'Inter', Arial, Helvetica, sans-serif; */
+    display: inline-block;
+    animation: colorChange 4s infinite;
+    margin-left: 0.1em;
 }
