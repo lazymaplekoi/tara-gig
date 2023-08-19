@@ -1,14 +1,14 @@
 {% load static %}
 
-<header class="relative py-6 px-8">
+<header class="relative py-8 px-8">
     <div class="flex items-center justify-between">
         <div class="flex-shrink-0">
             <a href="/">
-                <h1 class="logo text-7xl font-1000">
+                <h1 class="logo text-6xl md:text-7xl">
                     {% comment %} tara<span class="rainbow-point">gig!</span> {% endcomment %}
                     <span class="relative group inline-flex sm:inline">
                         <span class="bg-gradient-to-r from-twilight-600 via-eminence-600 to-paprika-600 blur-xl filter opacity-30 group-hover:opacity-60 transition-opacity duration-200 w-full h-full absolute inset-0"></span>
-                        <span class="relative px-2">tara gig!</span>
+                        <span class="relative">tara gig!</span>
                     </span>
                 </h1>
             </a>
@@ -16,33 +16,48 @@
             {% comment %} <p class="text-xs font-sans pt-3">find your next live music experience, right here</p> {% endcomment %}
         </div>
 
-        <div class="relative block">
+        <div class="relative hidden lg:flex">
             <span class="absolute inset-y-0 left-0 flex items-center pl-2">
-                <svg class="h-5 w-5 fill-slate-300" viewBox="0 0 20 20">
+                <svg class="h-5 w-5 fill-slate-300" viewBox="0 0 22 22">
                   <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path>
                 </svg>
               </span>
-            <input type="text" placeholder="search for gigs, artists, etc." class="block bg-transparent w-full border-b-2 border-slate-300 py-2 pl-10 pr-2 shadow-lg focus:outline-none focus:border-b-citrine-500 focus:ring-citrine-500 text-base transition-colors duration-200" />
+            <input type="text" placeholder="search for gigs, artists, etc." class="block md:hidden xl:block bg-transparent w-full border-b-2 border-slate-300 py-2 pl-10 pr-2 shadow-lg focus:outline-none focus:border-b-citrine-500 focus:ring-citrine-500 text-base transition-colors duration-200" />
         </div>
 
-        <nav class="flex items-center justify-between space-x-10">
+        <button type="button" class="inline-flex p-2 text-white transition-all duration-200 rounded-md lg:hidden focus:bg-citrine-600/70 hover:bg-citrine-600/70 ">
+            <!-- Menu open: "hidden", Menu closed: "block" -->
+            
+            <svg class="block w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="2 2 20 20" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+            
+            <!-- Menu open: "block", Menu closed: "hidden" -->
+            
+            <svg class="hidden w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="2 2 20 20" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+            
+        </button>
+
+        <nav class="hidden lg:flex lg:items-center lg:justify-between lg:space-x-10">
             <span class="relative group inline-flex sm:inline">
                 <span class="bg-gradient-to-r from-eminence-600 to-eminence-600 filter blur-md transition-all duration-200 opacity-0 group-hover:opacity-60 absolute inset-0 w-full"></span>
                 <span class="relative">
-                    <a href="#" title="" class="font-medium text-xl text-white"> upcoming gigs </a>
+                    <a href="#" title="" class="font-medium text-lg  text-white"> upcoming gigs </a>
                 </span>
             </span>
             <span class="relative group inline-flex sm:inline">
                 <span class="bg-gradient-to-r from-citrine to-citrine filter blur-md transition-all duration-200 opacity-0 group-hover:opacity-60 absolute inset-0 w-full"></span>
                 <span class="relative">
-                    <a href="#" title="" class="font-medium text-xl text-white">artists</a>
+                    <a href="#" title="" class="font-medium text-lg  text-white">artists</a>
                 </span>
             </span>
             
             <span class="relative group inline-flex sm:inline">
                 <span class="bg-gradient-to-r from-jade to-jade filter blur-md transition-all duration-200 opacity-0 group-hover:opacity-60 absolute inset-0 w-full"></span>
                 <span class="relative">
-                    <a href="#" title="" class="font-medium text-xl text-white">venues</a>
+                    <a href="#" title="" class="font-medium text-lg  text-white">venues</a>
                 </span>
             </span>
             
@@ -50,14 +65,14 @@
             {% comment %} <span class="relative group inline-flex sm:inline">
                 <span class="bg-gradient-to-r from-paprika to-paprika filter blur-md transition-all duration-200 opacity-0 group-hover:opacity-60 absolute inset-0 w-full"></span>
                 <span class="relative">
-                    <a href="#" title="" class="font-medium text-xl text-white">about</a>
+                    <a href="#" title="" class="font-medium text-lg  text-white">about</a>
                 </span>
             </span> {% endcomment %}
 
             <span class="relative group inline-flex sm:inline">
                 <span class="bg-gradient-to-r from-twilight-700 to-twilight-700 filter blur-xl transition-all duration-200 opacity-0 group-hover:opacity-90 absolute inset-0"></span>
                 <span class="relative">
-                    <a href="#" title="" class="relative text-center px-4 py-3 text-base font-bold text-white transition-all duration-200 bg-twilight-400 group-hover:bg-twilight-500 rounded-md focus:bg-twilight-600" role="button">post your gig</a>
+                    <a href="#" title="" class="relative text-center px-4 py-3 text-lg font-medium text-white transition-all duration-200 bg-twilight-400 group-hover:bg-twilight-500 rounded-md focus:bg-twilight-600" role="button">post your gig</a>
                 </span>
                 
             </span>

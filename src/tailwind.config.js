@@ -3,14 +3,14 @@ module.exports = {
         relative: true,
         files: [
             './**/templates/*.html',
-            './**/templates/**/*.html'
+            './**/templates/layouts/*.html'
         ]
     },
     theme: {
-        fontWeight: {
-            1000: '1000'
-        },
         extend: {
+            fontWeight: {
+                1000: '1000'
+            },
             colors: {
                 jet: '#2A2B2E',
                 'smoky': { 
