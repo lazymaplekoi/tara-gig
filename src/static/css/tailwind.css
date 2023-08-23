@@ -17,3 +17,16 @@
         @apply font-heading lowercase;
     }
 }
+
+@layer components {
+    .nav-item {
+        @apply font-medium text-lg text-white py-2 px-1;
+    }
+    .gig-deets {
+        @apply mb-2 flex flex-row items-center justify-between text-sm font-normal text-white;
+    }
+
+    .event-title {
+        @apply text-base uppercase font-semibold text-white;
+    }
+}
