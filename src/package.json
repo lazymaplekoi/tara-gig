@@ -12,6 +12,7 @@
     "watch:css": "npx tailwindcss -i static/css/tailwind.css -o static/css/styles.css --watch"
   },
   "dependencies": {
-    "concurrently": "^8.2.0"
+    "concurrently": "^8.2.0",
+    "jquery": "^3.7.0"
   }
 }
