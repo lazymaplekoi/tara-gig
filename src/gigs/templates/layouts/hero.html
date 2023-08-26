@@ -1,15 +1,24 @@
 {% load static %}
 
-<div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-    <div class="max-w-2xl mx-auto text-center">
-        {% comment %} <h1 class="px-6 text-lg text-white">find your next live music experience, right here</h1> {% endcomment %}
-        <div class="mt-5 text-2xl leading-tight lg:leading-tight text-white  lg:text-4xl font-light">
+<div class="px-6 mx-auto max-w-7xl md:px-8">
+    <div class="max-w-3xl mx-auto text-center">
+
+        <div class="mt-0 py-2 text-2xl leading-tight lg:leading-tight text-white lg:mt-5 lg:text-4xl font-light">
             find your next<br>
-            <div class="relative group inline-flex sm:inline my-1 hover:px-2">
-                <span class="bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] blur-xl filter opacity-40 w-full h-full absolute inset-0 group-hover:opacity-70 duration-800 transition-all"></span>
-                <span class="relative font-medium text-4xl lg:text-6xl">live music experience</span>
+            <div class="relative group inline-flex sm:inline my-1 hover:px-2 mx-4 md:mx-0">
+                <span class="bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] blur-xl filter opacity-50 lg:opacity-40 w-full h-full absolute inset-0 group-hover:opacity-70 duration-800 transition-all"></span>
+                <span class="relative font-medium text-5xl lg:text-6xl">live music experience</span>
             </div>
-            <p class="relative text-lg leading-loose font-light mt-2">without digging through social media.</p>
+            <p class="relative text-lg leading-loose font-light mt-1 md:mt-2">without digging through social media.</p>
+        </div>
+
+        <div class="relative group max-w-2xl w-full mx-auto px-6 my-6 text-center">
+            <span class="absolute inset-y-0 flex items-center pl-3 pt-1">
+                <svg class="h-5 w-5 fill-twilight-600" viewBox="0 0 22 22">
+                  <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path>
+                </svg>
+              </span>
+            <input type="text" placeholder="search for gigs, artists, and venues" class="flex bg-transparent w-full border-2 border-twilight-600 py-3 pl-10 shadow-xl hover:shadow-paprika-600/30 focus:outline-none  focus:shadow-eminence-600/30 focus:ring-none text-base transition-all duration-200" />
         </div>
     </div>
 </div>

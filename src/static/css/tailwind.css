@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 @layer base {
-
     html, body {
         @apply font-sans text-white;
     }
@@ -26,7 +25,19 @@
         @apply mb-2 flex flex-row items-center justify-between text-sm font-normal text-white;
     }
 
+    .gig-deets .date, .gig-deets .location {
+        @apply flex items-center;
+    }
+
     .event-title {
         @apply text-base uppercase font-semibold text-white;
+    }
+
+    #flyout-menu, #flyout-menu.hide {
+        @apply flex bg-black border border-paprika-300/30 shadow-xl shadow-paprika/30 top-0 right-0 px-6 py-4 h-[500px] w-[400px] fixed z-[1000];
+    }
+
+    #flyout-menu.hide nav {
+        @apply opacity-0 hidden;
     }
 }

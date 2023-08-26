@@ -27,10 +27,13 @@
     <div class="relative">
         {% include 'layouts/header.html' %}
         
-        <section class="relative py-12 sm:py-16 lg:pb-40">
+        <section class="relative py-8 lg:pb-40">
             {% block content %} {% endblock %}
         </section>
     </div>
+    
+    <script src="{% static 'js/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'js/header.js' %}"></script>
 </body>
 
 </html>
