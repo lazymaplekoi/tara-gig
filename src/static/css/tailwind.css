@@ -25,7 +25,7 @@
         @apply mb-2 flex flex-row items-center justify-between text-sm font-normal text-white;
     }
 
-    .gig-deets .date, .gig-deets .location {
+    .date, .location {
         @apply flex items-center;
     }
 
