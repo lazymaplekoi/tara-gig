@@ -16,10 +16,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import include, path
-from gigs.views import index
+from gigs.views import index, confirm_subscription
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('confirm/', confirm_subscription, name='confirm_subscription'),
     path('', index, name='gigs_index'),
     path('gigs/', include('gigs.urls')),
 ]

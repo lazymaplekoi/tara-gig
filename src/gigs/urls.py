@@ -21,5 +21,5 @@ from . import views
 
 urlpatterns = [
     path('', views.index, name='index'),
-    path('error/', views.error, name='error'),
+    # path('error/', views.error, name='error'),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

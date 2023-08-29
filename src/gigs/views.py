@@ -5,3 +5,6 @@ def index(request):
 
 def error(request):
     return render(request, 'error.html')
+
+def confirm_subscription(request):
+    return render(request, 'confirm.html')
