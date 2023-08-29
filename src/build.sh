@@ -2,7 +2,7 @@
 
 # Create a virtual environment
 echo "Creating a virtual environment..."
-python -m venv tgenv
+python3.11 -m venv tgenv
 source tgenv/bin/activate
 
 # Install the latest version of pip
