@@ -1,0 +1,14 @@
+{
+    "builds": [
+      {
+        "src": "tara_gig/wsgi.py",
+        "use": "@vercel/python"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "tara_gig/wsgi.py"
+      }
+    ]
+}
