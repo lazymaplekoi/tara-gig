@@ -39,7 +39,7 @@ node_modules/
 pip-wheel-metadata/
 
 # Settings
-src/tara_gig/settings.py
+# src/tara_gig/settings.py
 
 # Other files
 eg/
