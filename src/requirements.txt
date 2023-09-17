@@ -1,4 +1,7 @@
+antiorm==1.2.1
 asgiref==3.6.0
+db==0.1.1
+db-sqlite3==0.0.1
 Django==4.2
 django-htmx==1.14.0
 Pillow==9.5.0
