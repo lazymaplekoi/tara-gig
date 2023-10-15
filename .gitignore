@@ -41,6 +41,9 @@ pip-wheel-metadata/
 # Settings
 # src/tara_gig/settings.py
 
+# Static files
+/*/gigs/static/
+
 # Other files
 eg/
 *.bat
