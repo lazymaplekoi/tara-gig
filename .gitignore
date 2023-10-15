@@ -35,6 +35,9 @@ node_modules/
 *.tmp
 *.log
 
+# Old database
+db.sqlite3
+
 # Dependency directories
 pip-wheel-metadata/
 

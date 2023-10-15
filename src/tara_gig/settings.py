@@ -80,8 +80,12 @@ WSGI_APPLICATION = 'tara_gig.wsgi.app'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'verceldb',
+        'USER': 'default',
+        'PASSWORD': 'GBZtHdLKU6g7',
+        'HOST': 'ep-blue-resonance-01018889.us-east-1.postgres.vercel-storage.com',
+        'PORT': '5432',
     }
 }
 
