@@ -8,3 +8,6 @@ def error(request):
 
 def confirm_subscription(request):
     return render(request, 'confirm.html')
+
+def plug_gig(request):
+    return render(request, 'upload.html')
