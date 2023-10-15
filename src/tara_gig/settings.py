@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 if DEBUG:
     ALLOWED_HOSTS = ['127.0.0.1']
@@ -132,7 +132,8 @@ STATIC_URL = 'static/'
 STATICFILES_DIRS = [
     BASE_DIR / 'static' / 'css',
     BASE_DIR / 'static' / 'js',
-    BASE_DIR / 'static' / 'images'
+    BASE_DIR / 'static' / 'images',
+    BASE_DIR / 'public'
 ]
 
 MEDIA_ROOT = BASE_DIR / 'static' / 'images'
