@@ -29,7 +29,7 @@ DEBUG = False
 if DEBUG:
     ALLOWED_HOSTS = ['127.0.0.1']
 else:
-    ALLOWED_HOSTS = [ 'taragig.com', '.vercel.app', 'www.taragig.com', '127.0.0.1']
+    ALLOWED_HOSTS = [ 'taragig.com', '.vercel.app', 'www.taragig.com']
 
 # Application definition
 
@@ -132,7 +132,8 @@ STATIC_URL = 'static/'
 STATICFILES_DIRS = [
     BASE_DIR / 'static' / 'css',
     BASE_DIR / 'static' / 'js',
-    BASE_DIR / 'static' / 'images'
+    BASE_DIR / 'static' / 'images',
+    BASE_DIR / 'public'
 ]
 
 MEDIA_ROOT = BASE_DIR / 'static' / 'images'
